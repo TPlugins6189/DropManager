@@ -310,7 +310,7 @@ namespace DropManager
                 return allItemsAmount;
             }
 
-            return Convert.ToInt32(allItemsAmount - Math.Ceiling(allItemsAmount * finalPercentage / (double)100));
+            return Convert.ToInt32(allItemsAmount - System.Math.Ceiling(allItemsAmount * finalPercentage / (double)100));
         }
         
         private void DropAllItems(UnturnedPlayer player, bool showWarnings)
